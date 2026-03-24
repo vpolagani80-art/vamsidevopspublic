@@ -8,6 +8,13 @@ git branch: 'main', url: 'https://github.com/vpolagani80-art/vamsidevopspublic.g
 }
 }
 }
+stages('unit testing'){
+steps{
+script{
+sh 'mvn test'
+}
+}
+}
 }
 }
 
