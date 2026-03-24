@@ -1,7 +1,7 @@
 pipeline{
 agent any
-stage{
-  stage("git clonnig"){
+stage {
+  stage('git cloning'){
    steps{
    script{ 
 git branch: 'main', url: 'https://github.com/vpolagani80-art/vamsidevopspublic.git'
