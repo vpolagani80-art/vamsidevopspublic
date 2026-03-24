@@ -1,1 +1,16 @@
+pipeline{
+agent any
+stage{
+  stage("git clonnig"){
+   steps{
+   script{ 
+    git branch: 'main', url: 'https://github.com/vpolagani80-art/vamsidevopspublic.git'
+}
+}
+}
+}
+}
+
+
+
 
